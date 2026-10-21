@@ -26,7 +26,7 @@ class Name {
 
   final String first;
   final String last;
-  String get fullNmae => '$first $last';
+  String get fullName => '$first $last';
 }
 
 class User {
