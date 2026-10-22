@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import '../models/models.dart';
 import 'star_button.dart';
 
@@ -234,14 +233,14 @@ class EmailHeadline extends StatefulWidget {
   State<EmailHeadline> createState() => _EmailHeadlineState();
 }
 
-class _EmailHeadlineState extends State<EmailHealine> {
+class _EmailHeadlineState extends State<EmailHeadline> {
   late final TextTheme _textTheme = Theme.of(context).textTheme;
   late final ColorScheme _colorScheme = Theme.of(context).colorScheme;
 
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
-      builder: (context, Constraints) {
+      builder: (context, constraints) {
         return Container(
           height: 84,
           color: Color.alphaBlend(

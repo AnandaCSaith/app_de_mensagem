@@ -7,7 +7,7 @@ final User user_0 = User(
 );
 
 final User user_1 = User(
-  name: const Name(first: '老', last '强'),
+  name: const Name(first: 'Lucas', last: 'Silva'),
   avatarUrl: 'asstes/avatar_2.png',
   lastActive: DateTime.now().subtract(const Duration(minutes: 10)),
 );
@@ -34,31 +34,31 @@ final List<Email> emails = [
   Email(
     sender: user_1,
     recipients: [],
-    subject: '豆花鱼',
+    subject: 'Lembrei de você!',
     content: 
-      '最近忙吗？昨晚我去了你最爱的那家饭馆，点了他们的特色豆花鱼，吃着吃着就想你了。',
+      'Oi! Como você está? Ontem fui àquele restaurante de que você tanto gosta e pedi o prato especial da casa. Enquanto comia, lembrei dos nossos momentos juntos. Precisamos marcar de ir lá novamente!',
   ),
   Email(
     sender: user_2,
     recipients: [],
-    subject: 'Dinner Club',
+    subject: 'Encontro do grupo de jantar',
     content: 
-      'I think it's time for us to finallytry that new noodle shop downtown that doesn't use menus. Anyone else have other suggestions for dinner club this week? I'm so intrigued by this idea of a noodle restaurant where no one gets to order for themselves - could be fun, or terrible, or both :)\n\nSo',
+      'Pessoal, que tal conhecermos aquele restaurante novo no centro da cidade? Ouvi dizer que lá não existe cardápio e o chef escolhe os pratos para os clientes. Acho a ideia bem interessante! Pode ser uma experiência incrível ou uma grande surpresa. Alguém tem outras sugestões para o nosso jantar desta semana?\n\nVamos combinar!',
   ),
   Email(
     sender: user_3,
     recipients: [],
-    subject: 'This food show is made for you',
+    subject: 'Encontrei uma série que você vai adorar',
     content: 
-      'Ping- you'd love this show I started watching. It's produced by a Thai drummer who started getting recognized for the amazing vegan food she always brought to shows.',
+      'Oi! Comecei a assistir a uma série sobre culinária e lembrei de você na mesma hora. Ela apresenta receitas criativas, opções vegetarianas e histórias de pessoas apaixonadas por gastronomia. Acho que você vai gostar bastante! Depois me conta o que achou.',
     attachments: [const Attachment(url: 'assets/thumbnail_1.png')],
   ),
   Email(
     sender: user_4,
     recipients: [],
-    subject: 'Volunteer EMT with me?',
+    subject: 'Vamos fazer trabalho voluntário?',
     content: 
-      'What do you think about training to be volunteer EMTs? We could do it together for moral support. Think about it??',
+      'Oi! Estava pensando em fazer um curso de primeiros socorros para atuar como voluntário em situações de emergência. Que tal participarmos juntos? Assim, podemos aprender algo novo e apoiar um ao outro durante o treinamento. Pense com carinho na ideia e depois me diga o que acha!',
   ),
 ];
 
@@ -66,15 +66,15 @@ final List<Email> replies = [
   Email(
     sender: user_2,
     recipients: [user_3, user_2],
-    subject: 'Dinner Club',
+    subject: 'Encontro do grupo de jantar',
     content:
-      'I think it's time for us to finally try that new noodle shop downtown that doesn't use menus. Anyone else have other suggestions for dinner club this week? I'm so intrigued by this idea of a noodle restaurant where no one gets to order for themselves - could be fun, or terrible, or both :)\n\nSo',
+      'Pessoal, acho que está na hora de finalmente experimentarmos aquele novo restaurante de massas no centro da cidade que não tem cardápio. Alguém tem outras sugestões para o nosso jantar desta semana? Estou muito curioso com essa ideia de um restaurante em que ninguém pode escolher o próprio pedido. Pode ser divertido, desastroso ou os dois ao mesmo tempo! :)\n\nEntão, o que vocês acham?',
   ),
   Email(
     sender: user_0,
     recipients: [user_3, user_2],
-    subject: 'Dinner Club',
+    subject: 'Encontro do grupo de jantar',
     content:
-    'Yes! Iforgot about that place! I'm definitely up fo take a risk this week and handing control over to this mysterious noodle chef. I wonder what happens if you have allergies though? Lucky none of us have any otherwise I'd be a bit concerned. \n\nThis is going to be great. See you all at the usual time?',
+    'Sim! Eu tinha me esquecido daquele lugar! Estou totalmente disposto a arriscar algo diferente nesta semana e deixar as escolhas nas mãos desse misterioso chef de massas. Só fico pensando no que acontece se alguém tiver alguma alergia alimentar. Ainda bem que nenhum de nós tem alergias, senão eu ficaria um pouco preocupado.\n\nIsso vai ser ótimo! Nos encontramos no horário de sempre?',
   ),
 ];
