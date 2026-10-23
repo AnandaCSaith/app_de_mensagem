@@ -18,7 +18,7 @@ class BottomBarTransition extends StatefulWidget {
 }
 
 class _BottomBarTransition extends State<BottomBarTransition> {
-  late final Animation<Offset> OffsetAnimation = Tween<Offset>(
+  late final Animation<Offset> offsetAnimation = Tween<Offset>(
     begin:const Offset(0, 1),
     end: Offset.zero,
   ).animate(OffsetAnimation(parent: widget.animation));
@@ -29,4 +29,19 @@ class _BottomBarTransition extends State<BottomBarTransition> {
   ).animate(SizeAnimation(parent: widget.animation));
 
   @override
+  Widget build(BuildContext context) {
+    return ClipRRect(
+      child: DecoratedBox(
+        decoration: BoxDecoration(color:widget.backgroundColor),
+        child: Align(
+          alignment: Alignment.topLeft,
+          heightFactor: heightAnimation.value,
+          child: FractionalTranslation(
+            translation: offsetAnimation.value,
+            child: widget.child,
+          ),
+        ),
+      ),
+    );
+  }
 }
